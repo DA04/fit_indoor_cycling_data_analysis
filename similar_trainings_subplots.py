@@ -10,7 +10,7 @@ df = df[['activity_id', 'training_type']]
 training_3 = df.loc[df['training_type']==3]
 list_3 = training_3['activity_id'].to_list()
 
-conn = psycopg2.connect(host="localhost", database="garmin_data", user="postgres", password="afande")
+conn = psycopg2.connect(host="localhost", database="garmin_data", user="postgres", password="*****")
 
 # generate a chart for each training from the list_3
 for i in range(5):
